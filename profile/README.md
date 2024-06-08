@@ -15,14 +15,14 @@ Skitters is a task management software developed by CraftNotion, designed to sim
 
 ## Microservices
 
-Skitters consists of the following microservices, each running in microservice mode and exposing ports for internal communication as well as HTTPS.
+Skitters consists of the following microservices, each running in microservice mode and exposing ports for internal communication, WebSocket, and HTTPS.
 
-| Service         | Description                                     | Internal Port | HTTPS Port |
-|-----------------|-------------------------------------------------|---------------|------------|
-| Authentication  | Manages user authentication and authorization   | 3001          | 4001       |
-| Project         | Handles project management and tracking         | 3002          | 4002       |
-| Communication   | Manages client communication and notifications  | 3003          | 4003       |
-| Elastic         | Provides search functionality using Elasticsearch| 3004          | 4004       |
+| Service         | Description                                     | Internal Port | WebSocket Port | HTTPS Port |
+|-----------------|-------------------------------------------------|---------------|----------------|------------|
+| Authentication  | Manages user authentication and authorization   | 3001          | 5001           | 4001       |
+| Project         | Handles project management and tracking         | 3002          | 5002           | 4002       |
+| Communication   | Manages client communication and notifications  | 3003          | 5003           | 4003       |
+| Elastic         | Provides search functionality using Elasticsearch| 3004          | 5004           | 4004       |
 
 ## Getting Started
 
@@ -85,3 +85,11 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 
 For any questions or support, please contact us at support@craftnotion.com.
+
+---
+
+And here's the short description for GitHub:
+
+---
+
+**Skitters** is a task management software by CraftNotion, designed to simplify the tracking of clients, projects, and tasks. Built with Next.js and SASS on the frontend, and NestJS, PostgreSQL, and Elasticsearch on the backend, it leverages a microservices architecture to efficiently manage authentication, projects, communication, and search functionality.
